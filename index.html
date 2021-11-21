@@ -13,8 +13,45 @@
   <link rel="stylesheet" href="choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer src="main.js"></script>
 </head>
 <body>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Snow Fairy</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">Rockin’ Playing Game</span>
+    </div>
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Snow Fairy</span>
+    </div>
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Snow Fairy</span>
+    </div>
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">Snow Fairy</span>
+      </div>
+      <div class="inputs">
+        <label for="size" class="control-label">Size<input data-sizing="px" type="range" name="spacing" min="50" max="800" value="400" class="control-input" id="size"></label>
+        <label for="blur" class="control-label">Blur<input data-sizing="px" type="range" name="blur" min="0" max="25" value="10" class="control-input" id="blur"></label>
+        <label for="color" class="control-label">Color<input type="color" name="base" value="#fff" class="control-input" id="color"></label>
+      </div>
+  </div>
+  <audio data-key="65" src="audio/Fairy Tail OP 1.mp3"></audio>
+  <audio data-key="83" src="audio/SuG - R.P.G.～Rockin’ Playing Game (t9music.ru).mp3"></audio>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
   <div class="categories">
     <h2 class="title">Категории:</h2>
     <label for="checkbox" class="label"><input type="checkbox" class="checkbox"  id="checkbox"><span class="span"  tabindex="0"></span>Динозавры</label>

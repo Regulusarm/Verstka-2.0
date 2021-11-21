@@ -1,3 +1,8 @@
+:root {
+  --base: rgb(255, 33, 33);
+  --spacing: 400px;
+  --blur: 10px;
+}
 body {
   background: gray;
   box-sizing: border-box;
@@ -244,3 +249,72 @@ button {
   background: #5f5f5f;
   transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
 }
+.keys {
+  display: flex;
+}
+.key {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid rgb(85, 85, 85);
+  background: rgb(85, 85, 85);
+  transition: all .25s ease;
+  max-width: 210px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+kbd {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.key span {
+  color: var(--base);
+}
+.playing {
+  transform: scale(1.2);
+  border-color: var(--base);
+  box-shadow: 0 0 10px var(--base);
+}
+.clock {
+  margin: 50px 0px;
+  margin-left: 250px;
+}
+.clock-face {
+  filter: blur(var(--blur));
+  width: var(--spacing);
+  height: var(--spacing);
+  border-radius: 50%;
+  border: 5px solid black;
+  position: relative;
+  background: rgb(85, 85, 85);
+}
+.hand {
+  width: 5px;
+  height: calc(var(--spacing) / 2.2) ;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform-origin: bottom;
+}
+.min-hand {
+  width: 3px;
+}
+.second-hand {
+  width: 3px;
+  background: var(--base);
+}
+.inputs {
+  max-width: 300px;
+  margin-left: 30px;
+}
+.control-label {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--base);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
